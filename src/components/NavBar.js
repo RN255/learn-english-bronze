@@ -10,7 +10,7 @@ export default function NavBar() {
         <Container fluid>
           <Navbar.Brand>
             <Nav.Link href="/" to="/" className="navLogo d-flex">
-              <p className="my-auto">NAME</p>
+              <p className="my-auto">LearnEnglish</p>
             </Nav.Link>
           </Navbar.Brand>
           <Navbar.Toggle
