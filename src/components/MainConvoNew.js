@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/styles.css";
+import SideBar from "./SideBar";
 
 export default function MainConvoNew(props) {
   var character1 = props.StoryText.character1;
@@ -28,6 +29,7 @@ export default function MainConvoNew(props) {
 
   return (
     <div className="container pt-3">
+      <SideBar StoryText={props.StoryText}></SideBar>
       <div className="row justify-content-center mb-4">
         <h2>Story number: {props.StoryText.storyNumber}</h2>
         {output}

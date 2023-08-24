@@ -30,25 +30,25 @@ export default function NavBar() {
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
                 <Nav.Link
-                // href="/"
-                // to="/"
-                // className="navLink"
+                href="/"
+                to="/"
+                className="navLink"
                 >
-                  Link A
+                  Home
                 </Nav.Link>
                 <Nav.Link
-                // href="/lessonsIndex"
-                // to="/lessonsIndex"
-                // className="navLink"
+                href="/lessonsIndex"
+                to="/lessonsIndex"
+                className="navLink"
                 >
-                  Link B
+                  Lessons
                 </Nav.Link>
                 <Nav.Link
                 // href="/info"
                 // to="/info"
                 // className="navLink"
                 >
-                  Link C
+                  Info
                 </Nav.Link>
               </Nav>
             </Offcanvas.Body>

@@ -86,4 +86,40 @@ export const arrayOfStories = [
     line4:
       "wow bob, you have a sweet tongue, but I want to finish on line 4 thanks",
   },
+
+  {
+    storyNumber: "5",
+    storyTitle: "a fifth and larger story",
+    character1: "bob",
+    character2: "sally",
+    character3: "joe",
+    numberOfLines: 12,
+    line1Speaker: "bob",
+    line1: "hi there, how are you?",
+    line2Speaker: "sally",
+    line2: "I'm good, and you?",
+    line3Speaker: "bob",
+    line3: "I'm great, better now I've met you",
+    line4Speaker: "sally",
+    line4:
+      "wow bob, you have a sweet tongue, but I want to finish on line 4 thanks",
+    line5Speaker: "bob",
+    line5: "hi there, how are you?",
+    line6Speaker: "sally",
+    line6: "I'm good, and you?",
+    line7Speaker: "bob",
+    line7: "I'm great, better now I've met you",
+    line8Speaker: "sally",
+    line8:
+      "wow bob, you have a sweet tongue, but I want to finish on line 4 thanks",
+    line9Speaker: "bob",
+    line9: "hi there, how are you?",
+    line10Speaker: "sally",
+    line10: "I'm good, and you?",
+    line11Speaker: "bob",
+    line11: "I'm great, better now I've met you",
+    line12Speaker: "sally",
+    line12:
+      "wow bob, you have a sweet tongue, but I want to finish on line 4 thanks",
+  },
 ];
