@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/styles.css";
 
-export default function MainConvo(props) {
+export default function MainConvoNew(props) {
   var character1 = props.StoryText.character1;
   var character2 = props.StoryText.character2;
   var character3 = props.StoryText.character3;
