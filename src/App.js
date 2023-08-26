@@ -9,26 +9,40 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import LessonsIndex from "./pages/LessonsIndex";
 import { basicCourse1Array } from "./modules/basicCourse1";
 import BasicCourse1 from "./components/BasicCourse1";
+import { course3Array } from "./modules/course3";
 
 function App() {
   return (
     <BrowserRouter>
       <NavBar></NavBar>
-      <Home></Home>
       <Routes>
+        <Route path="/" element={<Home></Home>}></Route>
         <Route path="/lessonsIndex" element={<LessonsIndex />} />
         {arrayOfStories.map((item) => (
           <Route
             key={item}
             path={`/${item.series}-${item.number}`}
-            element={<MainConvoNew StoryText={item} parentArray={arrayOfStories}/>}
+            element={
+              <MainConvoNew StoryText={item} parentArray={arrayOfStories} />
+            }
           />
         ))}
         {basicCourse1Array.map((item) => (
           <Route
             key={item}
             path={`/${item.series}-${item.number}`}
-            element={<BasicCourse1 LessonText={item} parentArray={basicCourse1Array}/>}
+            element={
+              <BasicCourse1 LessonText={item} parentArray={basicCourse1Array} />
+            }
+          />
+        ))}
+        {course3Array.map((item) => (
+          <Route
+            key={item}
+            path={`/${item.series}-${item.number}`}
+            element={
+              <BasicCourse1 LessonText={item} parentArray={basicCourse1Array} />
+            }
           />
         ))}
       </Routes>

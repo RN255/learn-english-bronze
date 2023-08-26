@@ -315,3 +315,17 @@ audio {
     display: none;
   }
 }
+
+/* new CSS for the new english project  */
+
+.darkBlueBackground {
+  background-color: #2a9df410;
+}
+
+.lightBlueBackground {
+  background-color: #2a9df430;
+}
+
+.greenBackground {
+  background-color: #2af45c20 !important;
+}

@@ -1,8 +1,8 @@
-export const basicCourse1Array = [
+export const course3Array = [
   {
     number: "1",
     title: "What's your name?",
-    series: "basicCourse1",
+    series: "course3",
     character1: "a",
     character2: "b",
     numberOfLines: 5,
@@ -21,7 +21,7 @@ export const basicCourse1Array = [
   {
     number: "2",
     title: "What's your name?",
-    series: "basicCourse1",
+    series: "course3",
     character1: "a",
     character2: "b",
     numberOfLines: 5,
@@ -40,7 +40,7 @@ export const basicCourse1Array = [
   {
     number: "3",
     title: "How old are you?",
-    series: "basicCourse1",
+    series: "course3",
     character1: "a",
     character2: "b",
     numberOfLines: 6,
@@ -55,6 +55,7 @@ export const basicCourse1Array = [
     line5Speaker: "a",
     line5: "Wow, does that mean you're a boomer?",
     line6Speaker: "b",
-    line6: "Not quite, I'm not that old! OMG! You thought I was a boomer! Shit!",
+    line6:
+      "Not quite, I'm not that old! OMG! You thought I was a boomer! Shit!",
   },
 ];

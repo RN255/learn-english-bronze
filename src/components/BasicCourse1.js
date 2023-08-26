@@ -10,30 +10,37 @@ export default function BasicCourse1(props) {
   const output = [];
   for (let i = 0; i < props.LessonText.numberOfLines; i++) {
     output.push(
-      <p
+      <div
         key={i}
         className={
           props.LessonText[`line${i + 1}Speaker`] === character1
-            ? "text-warning"
+            ? "row my-1 darkBlueBackground"
             : props.LessonText[`line${i + 1}Speaker`] === character2
-            ? "text-success"
+            ? "row my-1 lightBlueBackground"
             : props.LessonText[`line${i + 1}Speaker`] === character3
-            ? "text-danger"
+            ? "row my-1 greenBackground"
             : ""
         }
       >
-        {props.LessonText[`line${i + 1}`]}
-      </p>
+        <div className="col">
+          <p className="my-2">{props.LessonText[`line${i + 1}`]}</p>
+        </div>
+      </div>
     );
   }
 
   return (
     <div className="container pt-3">
-      <SideBar StoryText={props.LessonText} parentArray={props.parentArray}></SideBar>
-      <div className="row justify-content-center mb-4">
-        <h2>Story number: {props.LessonText.number}</h2>
-        {output}
+      <SideBar
+        StoryText={props.LessonText}
+        parentArray={props.parentArray}
+      ></SideBar>
+      <div className="row mt-3 mb-5 text-center">
+        <div className="col">
+          <h2>{props.LessonText.number}{" "}| {props.LessonText.title}</h2>
+        </div>
       </div>
+      {output}
     </div>
   );
 }
