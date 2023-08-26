@@ -3,12 +3,12 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { arrayOfLessons } from "./modules/lessonText";
 import { arrayOfStories } from "./modules/storyHolder";
-import MainConvo from "./components/MainConvo";
 import MainConvoNew from "./components/MainConvoNew";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import LessonsIndex from "./pages/LessonsIndex";
+import { basicCourse1Array } from "./modules/basicCourse1";
+import BasicCourse1 from "./components/BasicCourse1";
 
 function App() {
   return (
@@ -20,14 +20,18 @@ function App() {
         {arrayOfStories.map((item) => (
           <Route
             key={item}
-            path={`/story${item.storyNumber}`}
-            element={<MainConvoNew StoryText={item} />}
+            path={`/${item.series}-${item.number}`}
+            element={<MainConvoNew StoryText={item} parentArray={arrayOfStories}/>}
+          />
+        ))}
+        {basicCourse1Array.map((item) => (
+          <Route
+            key={item}
+            path={`/${item.series}-${item.number}`}
+            element={<BasicCourse1 LessonText={item} parentArray={basicCourse1Array}/>}
           />
         ))}
       </Routes>
-      <MainConvo LessonText={arrayOfLessons[0]}></MainConvo>
-      <MainConvoNew StoryText={arrayOfStories[0]}></MainConvoNew>
-      <MainConvoNew StoryText={arrayOfStories[1]}></MainConvoNew>
     </BrowserRouter>
   );
 }

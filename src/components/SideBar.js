@@ -10,8 +10,8 @@ export default function SideBar(props) {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const nextLessonNum = parseInt(props.StoryText.storyNumber) + 1;
-  const prevLessonNum = parseInt(props.StoryText.storyNumber) - 1;
+  const nextLessonNum = parseInt(props.StoryText.number) + 1;
+  const prevLessonNum = parseInt(props.StoryText.number) - 1;
 
   return (
     <div className="container sideBar">
@@ -27,7 +27,10 @@ export default function SideBar(props) {
               &lt; Previous
             </Button>
           ) : (
-            <Link className="nextPrevLink" to={`/story${prevLessonNum}`}>
+            <Link
+              className="nextPrevLink"
+              to={`/${props.StoryText.series}-${prevLessonNum}`}
+            >
               <Button variant="link" size="sm" className="lessonSelectButtons">
                 &lt; Previous
               </Button>
@@ -45,7 +48,7 @@ export default function SideBar(props) {
           </Button>
         </div>
         <div className="col col-lg-2 col-xl-1 text-center p-0">
-          {nextLessonNum > arrayOfStories.length ? (
+          {nextLessonNum > props.parentArray.length ? (
             <Button
               variant="link"
               size="sm"
@@ -55,7 +58,7 @@ export default function SideBar(props) {
               Next &gt;
             </Button>
           ) : (
-            <Link to={`/story${nextLessonNum}`}>
+            <Link to={`/${props.StoryText.series}-${nextLessonNum}`}>
               <Button variant="link" size="sm" className="lessonSelectButtons">
                 Next &gt;
               </Button>
@@ -72,14 +75,14 @@ export default function SideBar(props) {
             </Offcanvas.Header>
           </div>
           <Offcanvas.Body>
-            {arrayOfStories.map((item) => (
-              <div className="row py-1" key={item.storyNumber}>
+            {props.parentArray.map((item) => (
+              <div className="row py-1" key={item.number}>
                 <Link
-                  to={`/story${item.storyNumber}`}
+                  to={`/${item.series}-${item.number}`}
                   onClick={handleClose}
                   className="lessonLink"
                 >
-                  {item.storyNumber} {item.storyTitle}
+                  {item.number} {item.title}
                 </Link>
               </div>
             ))}

@@ -29,9 +29,9 @@ export default function MainConvoNew(props) {
 
   return (
     <div className="container pt-3">
-      <SideBar StoryText={props.StoryText}></SideBar>
+      <SideBar StoryText={props.StoryText} parentArray={props.parentArray}></SideBar>
       <div className="row justify-content-center mb-4">
-        <h2>Story number: {props.StoryText.storyNumber}</h2>
+        <h2>Story number: {props.StoryText.number}</h2>
         {output}
       </div>
     </div>

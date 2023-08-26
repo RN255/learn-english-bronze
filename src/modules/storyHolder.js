@@ -1,7 +1,8 @@
 export const arrayOfStories = [
   {
-    storyNumber: "1",
-    storyTitle: "A nice story",
+    number: "1",
+    title: "A nice story",
+    series: "story",
     character1: "Jim",
     character2: "Sarah",
     character3: "Tycus",
@@ -21,11 +22,14 @@ export const arrayOfStories = [
       "Yes it does, do you think you can write 6000 words everyday just like lutx? Is it an accident? Remind me to make this one better so it can scale! Also, let's get some AI art in here to make it look really cool!",
     line6Speaker: "Tycus",
     line6: "Can you two stop talking, we have work to do!",
+    imageLocation: "../assets/images/boy.png",
   },
 
   {
-    storyNumber: "2",
-    storyTitle: "a second story",
+    number: "2",
+    title: "a second story",
+    series: "story",
+
     character1: "bob",
     character2: "sally",
     character3: "joe",
@@ -45,8 +49,10 @@ export const arrayOfStories = [
   },
 
   {
-    storyNumber: "3",
-    storyTitle: "a third and longer story",
+    number: "3",
+    title: "a third and longer story",
+    series: "story",
+
     character1: "bob",
     character2: "sally",
     character3: "joe",
@@ -70,8 +76,10 @@ export const arrayOfStories = [
   },
 
   {
-    storyNumber: "4",
-    storyTitle: "a fourth  and shorter story",
+    number: "4",
+    title: "a fourth  and shorter story",
+    series: "story",
+
     character1: "bob",
     character2: "sally",
     character3: "joe",
@@ -88,8 +96,10 @@ export const arrayOfStories = [
   },
 
   {
-    storyNumber: "5",
-    storyTitle: "a fifth and larger story",
+    number: "5",
+    title: "a fifth and larger story",
+    series: "story",
+
     character1: "bob",
     character2: "sally",
     character3: "joe",
