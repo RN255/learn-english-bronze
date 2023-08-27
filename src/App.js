@@ -5,16 +5,20 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import NavBar from "./components/NavBar";
 import LessonsIndex from "./pages/LessonsIndex";
-
 import BasicConvo from "./components/BasicConvo";
+import SeriesIndex from "./pages/SeriesIndex";
+
 import { basicCourse1Array } from "./modules/basicCourse1";
 import { course3Array } from "./modules/course3";
-import SeriesIndex from "./pages/SeriesIndex";
+import { course4Array } from "./modules/course4";
+import { course5Array } from "./modules/course5";
 
 function App() {
   const seriesList = [
     { name: "Basic-Course-One", array: basicCourse1Array },
-    { name: "Course-Three", array: course3Array }
+    { name: "Course-Three", array: course3Array },
+    { name: "Course-Four", array: course4Array },
+    { name: "Course-Five", array: course5Array },
   ];
 
   return (
@@ -44,7 +48,17 @@ function App() {
           element={<SeriesIndex SeriesArray={course3Array} />}
         ></Route> */}
 
-        {basicCourse1Array.map((item) => (
+        {seriesList.map((item) =>
+          item.array.map((arrayItem) => (
+            <Route
+              key={arrayItem.name}
+              path={`/${arrayItem.series}-${arrayItem.number}`}
+              element={<BasicConvo LessonText={arrayItem} parentArray={item.array} />}
+            />
+          ))
+        )}
+
+        {/* {basicCourse1Array.map((item) => (
           <Route
             key={item}
             path={`/${item.series}-${item.number}`}
@@ -62,6 +76,15 @@ function App() {
             }
           />
         ))}
+        {course4Array.map((item) => (
+          <Route
+            key={item}
+            path={`/${item.series}-${item.number}`}
+            element={
+              <BasicConvo LessonText={item} parentArray={course4Array} />
+            }
+          />
+        ))} */}
       </Routes>
     </BrowserRouter>
   );
