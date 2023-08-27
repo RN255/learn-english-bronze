@@ -8,19 +8,9 @@ import LessonsIndex from "./pages/LessonsIndex";
 import BasicConvo from "./components/BasicConvo";
 import SeriesIndex from "./pages/SeriesIndex";
 
-import { basicCourse1Array } from "./modules/basicCourse1";
-import { course3Array } from "./modules/course3";
-import { course4Array } from "./modules/course4";
-import { course5Array } from "./modules/course5";
+import { seriesList } from "./modules/seriesList";
 
 function App() {
-  const seriesList = [
-    { name: "Basic-Course-One", array: basicCourse1Array },
-    { name: "Course-Three", array: course3Array },
-    { name: "Course-Four", array: course4Array },
-    { name: "Course-Five", array: course5Array },
-  ];
-
   return (
     <BrowserRouter>
       <NavBar></NavBar>
@@ -53,7 +43,9 @@ function App() {
             <Route
               key={arrayItem.name}
               path={`/${arrayItem.series}-${arrayItem.number}`}
-              element={<BasicConvo LessonText={arrayItem} parentArray={item.array} />}
+              element={
+                <BasicConvo LessonText={arrayItem} parentArray={item.array} />
+              }
             />
           ))
         )}

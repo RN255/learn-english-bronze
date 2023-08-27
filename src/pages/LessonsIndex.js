@@ -9,7 +9,7 @@ export default function LessonsIndex(props) {
   return (
     <div className="container lessonIndex">
       <div className="row">
-        <div className="col">
+        {/* <div className="col">
           <Link to={`/series-Index-${props.seriesList[0].name}`}>
             <Card>
               <Card.Img variant="top" src="" />
@@ -64,7 +64,24 @@ export default function LessonsIndex(props) {
               </Card.Body>
             </Card>
           </Link>
+        </div> */}
+
+        {props.seriesList.map((item) => (
+          <div className="col">
+          <Link to={`/series-Index-${item.name}`}>
+            <Card>
+              <Card.Img variant="top" src="" />
+              <Card.Body>
+                <Card.Title>{item.name}</Card.Title>
+                <Card.Text>
+                  {item.description}
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Link>
         </div>
+         
+        ))}
       </div>
     </div>
   );
