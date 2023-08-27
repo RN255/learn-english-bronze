@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { Link } from "react-router-dom";
-import { arrayOfStories } from "../modules/storyHolder";
 
 export default function SideBar(props) {
   const [show, setShow] = useState(false);
