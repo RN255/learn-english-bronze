@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/styles.css";
 import SideBar from "./SideBar";
 
-export default function BasicCourse1(props) {
+export default function BasicConvo(props) {
   var character1 = props.LessonText.character1;
   var character2 = props.LessonText.character2;
   var character3 = props.LessonText.character3;
@@ -37,7 +37,9 @@ export default function BasicCourse1(props) {
       ></SideBar>
       <div className="row mt-3 mb-5 text-center">
         <div className="col">
-          <h2>{props.LessonText.number}{" "}| {props.LessonText.title}</h2>
+          <h2>
+            {props.LessonText.number} | {props.LessonText.title}
+          </h2>
         </div>
       </div>
       {output}

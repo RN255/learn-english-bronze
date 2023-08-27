@@ -55,6 +55,29 @@ export const basicCourse1Array = [
     line5Speaker: "a",
     line5: "Wow, does that mean you're a boomer?",
     line6Speaker: "b",
-    line6: "Not quite, I'm not that old! OMG! You thought I was a boomer! Shit!",
+    line6:
+      "Not quite, I'm not that old! OMG! You thought I was a boomer! Shit!",
+  },
+
+  {
+    number: "4",
+    title: "Let you know I'm unique",
+    series: "basicCourse1",
+    character1: "a",
+    character2: "b",
+    numberOfLines: 6,
+    line1Speaker: "a",
+    line1: "How old are you?",
+    line2Speaker: "b",
+    line2: "I can't remember, I'm too old.",
+    line3Speaker: "a",
+    line3: "Oh shit, you must be really old.",
+    line4Speaker: "b",
+    line4: "I was born in the 1980's!",
+    line5Speaker: "a",
+    line5: "Wow, does that mean you're a boomer?",
+    line6Speaker: "b",
+    line6:
+      "Not quite, I'm not that old! OMG! You thought I was a boomer! Shit!",
   },
 ];
