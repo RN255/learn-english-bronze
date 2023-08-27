@@ -29,15 +29,6 @@ function App() {
           />
         ))}
 
-        {/* <Route
-          path="/SeriesIndex1"
-          element={<SeriesIndex SeriesArray={basicCourse1Array} />}
-        ></Route>
-        <Route
-          path="/SeriesIndex2"
-          element={<SeriesIndex SeriesArray={course3Array} />}
-        ></Route> */}
-
         {seriesList.map((item) =>
           item.array.map((arrayItem) => (
             <Route
@@ -49,34 +40,6 @@ function App() {
             />
           ))
         )}
-
-        {/* {basicCourse1Array.map((item) => (
-          <Route
-            key={item}
-            path={`/${item.series}-${item.number}`}
-            element={
-              <BasicConvo LessonText={item} parentArray={basicCourse1Array} />
-            }
-          />
-        ))}
-        {course3Array.map((item) => (
-          <Route
-            key={item}
-            path={`/${item.series}-${item.number}`}
-            element={
-              <BasicConvo LessonText={item} parentArray={course3Array} />
-            }
-          />
-        ))}
-        {course4Array.map((item) => (
-          <Route
-            key={item}
-            path={`/${item.series}-${item.number}`}
-            element={
-              <BasicConvo LessonText={item} parentArray={course4Array} />
-            }
-          />
-        ))} */}
       </Routes>
     </BrowserRouter>
   );

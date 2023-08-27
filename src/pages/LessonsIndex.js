@@ -8,79 +8,19 @@ import Card from "react-bootstrap/Card";
 export default function LessonsIndex(props) {
   return (
     <div className="container lessonIndex">
-      <div className="row">
-        {/* <div className="col">
-          <Link to={`/series-Index-${props.seriesList[0].name}`}>
-            <Card>
-              <Card.Img variant="top" src="" />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Link>
-        </div>
-        <div className="col">
-          <Link to={`/series-Index-${props.seriesList[1].name}`}>
-            <Card>
-              <Card.Img variant="top" src="" />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Link>
-        </div>
-        <div className="col">
-          <Link to={`/series-Index-${props.seriesList[2].name}`}>
-            <Card>
-              <Card.Img variant="top" src="" />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Link>
-        </div>
-        <div className="col">
-          <Link to={`/series-Index-${props.seriesList[3].name}`}>
-            <Card>
-              <Card.Img variant="top" src="" />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Link>
-        </div> */}
-
+      <div className="row row-cols-3">
         {props.seriesList.map((item) => (
-          <div className="col">
-          <Link to={`/series-Index-${item.name}`}>
-            <Card>
-              <Card.Img variant="top" src="" />
-              <Card.Body>
-                <Card.Title>{item.name}</Card.Title>
-                <Card.Text>
-                  {item.description}
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Link>
-        </div>
-         
+          <div className="col mb-3">
+            <Link to={`/series-Index-${item.name}`}>
+              <Card className="h-100">
+                <Card.Img variant="top" src="" />
+                <Card.Body>
+                  <Card.Title>{item.name}</Card.Title>
+                  <Card.Text>{item.description}</Card.Text>
+                </Card.Body>
+              </Card>
+            </Link>
+          </div>
         ))}
       </div>
     </div>
