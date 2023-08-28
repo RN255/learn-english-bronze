@@ -1,4 +1,3 @@
-import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
@@ -24,8 +23,8 @@ function App() {
         {seriesList.map((item) => (
           <Route
             key={item.name}
-            path={`/series-Index-${item.name}`}
-            element={<SeriesIndex SeriesArray={item.array} />}
+            path={`/series-Index-${item.urlName}`}
+            element={<SeriesIndex SeriesArray={item.array} SeriesName={item.name} />}
           />
         ))}
 
@@ -35,7 +34,7 @@ function App() {
               key={arrayItem.name}
               path={`/${arrayItem.series}-${arrayItem.number}`}
               element={
-                <BasicConvo LessonText={arrayItem} parentArray={item.array} />
+                <BasicConvo LessonText={arrayItem} parentArray={item.array} SeriesName={item.name}/>
               }
             />
           ))

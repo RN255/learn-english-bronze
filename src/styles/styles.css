@@ -33,110 +33,25 @@
   color: #1d6daa !important;
 }
 
-/* the home page  */
-
-.mainPageConvoSample {
-  background-color: #2a9df430;
-  width: fit-content;
-}
-
-.mainPageConvoSample img {
-  height: 8rem;
-  width: 8rem;
-  border-radius: 50%;
-}
-
-.mainPageConvoSample div:nth-of-type(2) p:first-of-type {
-  font-size: 1.5rem;
-}
-
-.homePageInstructions {
-  font-size: 1.25rem;
-}
-
-.HomeCtaButton {
-  background-color: #2a9df410 !important;
-}
-
-.HomeCtaButton:hover {
-  /* background-color: #2a9df4 !important; */
-  background-color: #2a9df450 !important;
-}
-
-.homeItemCustomMargin {
-  margin-top: 100px;
-}
-
-.homePage span {
-  background-color: #2a9df430;
-  border-radius: 5px;
-  padding: 2px 3px 5px 9px;
-  margin-right: 10px;
-}
-
-/* home page animations  */
-
-.homePageBorderElement {
-  /* Other styles for the element */
-  border: 2px solid transparent;
-  transition: 0.5s;
-}
-
-.flashingBorder {
-  animation: flash 3s linear infinite;
-}
-
-@keyframes flash {
-  0% {
-    box-shadow: rgba(255, 0, 0, 0.05) 0px 0px 10px;
-  }
-  50% {
-    box-shadow: rgba(255, 0, 0, 0.7) 0px 0px 10px;
-  }
-  100% {
-    box-shadow: rgba(255, 0, 0, 0.05) 0px 0px 10px;
-  }
-}
-
-/* lesson index */
-
-.lessonIndex .row .col {
-  text-decoration: none !important;
-}
-
-.lessonIndex .LessonItem {
-  color: #2a9df4;
-}
-
-.lessonIndex .LessonItem:hover {
-  color: #1d6daa;
-}
-
-.lessonIndex .LessonItem div:first-of-type {
-  color: #000000;
-}
-
 /* lesson select buttons  */
 
-.sideBar .lessonSelectButtons {
+.lessonSelectButtons {
   color: #2a9df4;
   text-decoration: none;
-  /* border: #000 solid 1px; */
 }
 
-.sideBar .lessonSelectButtons:hover {
+.lessonSelectButtons:hover {
   color: #2a9df4;
   text-decoration: none;
   background-color: #2a9df410 !important;
 }
 
-.sideBar .lessonsIndexButton {
+.lessonsIndexButton {
   color: #2a9df4;
   text-decoration: none;
-  /* border: #000 solid 1px; */
 }
 
-.sideBar .lessonsIndexButton:hover {
+.lessonsIndexButton:hover {
   color: #2a9df4;
   text-decoration: none;
   background-color: #2a9df410 !important;
@@ -151,172 +66,42 @@
   color: #1d6daa;
 }
 
-/* main conversation  */
+/* Lesson index  */
 
-.mainConversation .btn {
-  background-color: #2a9df410 !important;
-}
-
-.mainConversation .btn:hover {
-  background-color: #2a9df450 !important;
-}
-
-.mainConversation .row .col {
-  margin: 5px 0;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.mainConversation .row .col div {
-  display: flex;
-  align-items: center;
-}
-
-.mainConversation .row .col img {
-  height: 2rem;
-  width: 2rem;
-  border-radius: 50%;
-}
-
-.mainConversation .row .col div p {
-  font-size: 1.5rem;
-  margin-left: 0.5rem;
-}
-
-.mainConversation .row .col p {
-  margin: 0;
-  font-size: 1rem;
-  margin-left: 2.5rem;
-}
-
-.mainConversation .row:nth-child(odd):not(:first-child) .col {
-  /* background-color: #c8e7f550; */
-  /* background-color: #CBE4F950; */
-  background-color: #2a9df410;
-
-  border-radius: 5px;
-}
-
-.mainConversation .row:nth-child(even) .col {
-  /* background-color: #f6d2e050; */
-  background-color: #2a9df430;
-
-  /* background-color: #CDF5F650; */
-  border-radius: 5px;
-}
-
-/* custom conversations  */
-
-.greenBackground {
-  background-color: #2af45c20 !important;
-}
-
-/* translation list  */
-
-.translatedWords p {
-  margin: 0;
-}
-
-.translatedWords .translationChinWord {
-  font-size: 1.5rem;
-}
-
-.translatedWords .translationEngWord {
-  overflow-wrap: break-word;
-  hyphens: auto;
-}
-
-/* audio player */
-
-audio {
-  width: 100%;
-  border-radius: 25px;
-}
-
-/* key phrases  */
-
-.keyPhrases .btn {
-  background-color: #2a9df410 !important;
-}
-
-.keyPhrases .btn:hover {
-  background-color: #2a9df450 !important;
-}
-
-.keyPhrases .row:not(:nth-child(2)) .col {
-  background-color: #2a9df430;
-  border-radius: 5px;
-}
-
-.keyPhrases .row .col {
-  margin: 5px 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.keyPhrases p {
-  margin: 0;
-}
-
-.keyPhrases .row .col p:first-child {
-  font-size: 1.5rem;
-}
-
-/* scroll up arrow  */
-
-.scrollUpArrow {
-  position: fixed;
-  bottom: 0;
-  right: 5%;
-  background-color: #2a9df410;
-  padding: 10px;
-}
-
-.scrollUpArrow img {
-  width: 25px;
-}
-
-/* footer  */
-
-.footerLink {
-  color: #2a9df4 !important;
-}
-
-.footerLink:hover {
-  color: #1d6daa !important;
-}
-
-/* info page  */
-
-.infoPage h2 {
+.lightBlueText {
   color: #2a9df4;
 }
 
-.infoPage ul {
-  list-style: none;
-  padding-left: 0;
+.darkBlueText {
+  color: #1d6daa;
 }
 
-/* media query  */
-
-@media screen and (max-width: 400px) {
-  .navBar p:first-of-type {
-    font-size: 1.5rem;
-  }
-
-  .navBar p:nth-of-type(2) {
-    margin-left: 0.5rem;
-    font-size: 1rem;
-  }
+.lessonIndexCard {
+  background-color: #2a9df410;
+  transition: 0.25s;
 }
 
-@media screen and (max-width: 300px) {
-  .navBar p:nth-of-type(2) {
-    display: none;
-  }
+.lessonIndexCard:hover {
+  background-color: #2a9df430;
+  transition: 0.25s;
 }
 
-/* new CSS for the new english project  */
+/* series index  */
+
+.seriesIndexLink {
+  color: #2a9df4;
+  text-decoration: none;
+}
+
+.seriesIndexLink:hover {
+  color: #1d6daa;
+}
+
+.lightBorder {
+  border: 2px solid #2a9df410;
+}
+
+/* BasicConvo  */
 
 .darkBlueBackground {
   background-color: #2a9df410;
@@ -328,4 +113,12 @@ audio {
 
 .greenBackground {
   background-color: #2af45c20 !important;
+}
+
+/* media query  */
+
+@media screen and (max-width: 400px) {
+  .navBar p:first-of-type {
+    font-size: 1.5rem;
+  }
 }

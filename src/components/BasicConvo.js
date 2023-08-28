@@ -34,8 +34,9 @@ export default function BasicConvo(props) {
       <SideBar
         StoryText={props.LessonText}
         parentArray={props.parentArray}
+        SeriesName={props.SeriesName}
       ></SideBar>
-      <div className="row mt-3 mb-5 text-center">
+      <div className="row mt-3 mb-4 text-center">
         <div className="col">
           <h2>
             {props.LessonText.number} | {props.LessonText.title}

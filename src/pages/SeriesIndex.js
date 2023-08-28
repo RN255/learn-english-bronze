@@ -1,23 +1,33 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { basicCourse1Array } from "../modules/basicCourse1";
+import { Button } from "react-bootstrap";
 
 export default function SeriesIndex(props) {
   return (
     <div className="container">
       <div className="row">
         <div className="col">
-          <Link to="/lessonsIndex">Go back to lesson list</Link>
+          <Link to="/lessonsIndex">
+            <Button
+              variant="link"
+              size="sm"
+              className="lightBorder lessonSelectButtons my-3 p-3"
+            >
+              Go back to lesson list
+            </Button>
+          </Link>
         </div>
       </div>
-      <div className="row">
+      <div className="row mt-3">
         <div className="col">
+          <p>{props.SeriesName}</p>
+          <p>eat</p>
           <div className="row">
             {props.SeriesArray.map((item) => (
               <Link
                 key={item.number}
                 to={`/${item.series}-${item.number}`}
-                className="text-decoration-none"
+                className="text-decoration-none seriesIndexLink"
               >
                 <div className="row border-bottom py-2 LessonItem">
                   <div className="col-1">{item.number}</div>

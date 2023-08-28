@@ -20,14 +20,13 @@ export default function SideBar(props) {
             <Button
               variant="link"
               size="sm"
-              className="lessonSelectButtons text-decoration-none"
+              className="text-decoration-none"
               disabled
             >
               &lt; Previous
             </Button>
           ) : (
             <Link
-              className="nextPrevLink"
               to={`/${props.StoryText.series}-${prevLessonNum}`}
             >
               <Button variant="link" size="sm" className="lessonSelectButtons">
@@ -70,7 +69,7 @@ export default function SideBar(props) {
         <div className="container overflow-auto">
           <div className="row">
             <Offcanvas.Header closeButton>
-              <Offcanvas.Title>Lesson Index</Offcanvas.Title>
+              <Offcanvas.Title>{props.SeriesName} Lesson Index</Offcanvas.Title>
             </Offcanvas.Header>
           </div>
           <Offcanvas.Body>

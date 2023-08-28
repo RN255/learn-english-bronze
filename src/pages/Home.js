@@ -6,6 +6,7 @@ export default function Home(props) {
       <p>Home</p>
       <p>Can we add something to the home please, it's about time.</p>
       <p>Be patient Robert!</p>
+      <p>Keep going.</p>
     </div>
   );
 }
