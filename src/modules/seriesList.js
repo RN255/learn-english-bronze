@@ -3,6 +3,7 @@ import { course3Array } from "./course3";
 import { course4Array } from "./course4";
 import { course5Array } from "./course5";
 import { course6Array } from "./course6";
+import { basicEnglishOne } from "./basicEnglishOne";
 
 export const seriesList = [
   {
@@ -36,5 +37,11 @@ export const seriesList = [
     array: course6Array,
     description:
       "This is unthinkably amazing and interesting Course SIX! So easy!",
+  },
+  {
+    name: "Basic English Course One",
+    urlName: "Basic-English-Course-One",
+    array: basicEnglishOne,
+    description: "A basic English course with many general phrases.",
   },
 ];

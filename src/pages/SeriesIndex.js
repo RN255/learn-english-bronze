@@ -20,8 +20,7 @@ export default function SeriesIndex(props) {
       </div>
       <div className="row mt-3">
         <div className="col">
-          <p>{props.SeriesName}</p>
-          <p>eat</p>
+          <h2 className="seriesIndexSeriesName">{props.SeriesName}</h2>
           <div className="row">
             {props.SeriesArray.map((item) => (
               <Link

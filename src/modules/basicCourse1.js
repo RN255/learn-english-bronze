@@ -80,4 +80,23 @@ export const basicCourse1Array = [
     line6:
       "Not quite, I'm not that old! OMG! You thought I was a boomer! Shit!",
   },
+
+  {
+    number: "5",
+    title: "Is this really going to work?",
+    series: "basicCourse1",
+    character1: "a",
+    character2: "b",
+    numberOfLines: 5,
+    line1Speaker: "a",
+    line1: "Is it working?",
+    line2Speaker: "b",
+    line2: "I will be very happy if it does...",
+    line3Speaker: "a",
+    line3: "Me too, I'll be over the moon.",
+    line4Speaker: "b",
+    line4: "I'll be over Mars.",
+    line5Speaker: "a",
+    line5: "That's not even funny.",
+  },
 ];
