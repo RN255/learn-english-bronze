@@ -13,7 +13,6 @@ export default function LessonsIndex(props) {
               className="text-decoration-none"
             >
               <Card className="h-100 border-0 lessonIndexCard">
-                <Card.Img variant="top" src="" />
                 <Card.Body className="text-decoration-none ">
                   <Card.Title className="text-center darkBlueText">
                     {item.name}

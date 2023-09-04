@@ -25,22 +25,38 @@ export default function BasicConvo(props) {
         <div
           className={
             props.LessonText[`line${i + 1}Speaker`] === character1
-              ? "col-lg-6 darkBlueBackground"
+              ? "col-lg-6 p-0 darkBlueBackground d-flex"
               : props.LessonText[`line${i + 1}Speaker`] === character2
-              ? "col-lg-6 lightBlueBackground"
+              ? "col-lg-6 p-0 lightBlueBackground d-flex"
               : props.LessonText[`line${i + 1}Speaker`] === character3
-              ? "col-lg-6 greenBackground"
+              ? "col-lg-6 greenBackground d-flex"
               : ""
           }
         >
-          <p className="my-2">{props.LessonText[`line${i + 1}`]}</p>
+          <div>
+            <img
+              src={
+                props.LessonText[`line${i + 1}Speaker`] === character1
+                  ? props.LessonText.character1Image
+                  : props.LessonText[`line${i + 1}Speaker`] === character2
+                  ? props.LessonText.character2Image
+                  : ""
+              }
+              alt="A face"
+              className="p-0 m-1"
+            ></img>
+          </div>
+
+          <div className="my-auto ms-2 p-0">
+            <p className="my-auto p-0">{props.LessonText[`line${i + 1}`]}</p>
+          </div>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="container mt-3 mb-5">
+    <div className="container mt-3 mb-5 basicConvo">
       <SideBar
         StoryText={props.LessonText}
         parentArray={props.parentArray}
@@ -51,46 +67,6 @@ export default function BasicConvo(props) {
           <h2>
             {props.LessonText.number} | {props.LessonText.title}
           </h2>
-        </div>
-      </div>
-      <div className="row justify-content-center px-1">
-        <div className="col-lg-3 darkBlueBackground me-1 p-1 d-flex">
-            <div className="w-50">
-              <img
-                src={props.LessonText.character1Image}
-                alt="Marco's face"
-                className=""
-              ></img>
-            </div>
-            <div className="p-1 my-auto w-50">
-              <p className="p-0 m-0">{character1}</p>
-              <p className="p-0 m-0">{props.LessonText.character1Age}</p>
-              <p className="p-0 m-0">
-                {props.LessonText.character1Nationality}
-              </p>
-              <p className="p-0 m-0">
-                {props.LessonText.character1Description}
-              </p>
-          </div>
-        </div>
-        <div className="col-lg-3 lightBlueBackground p-1 d-flex">
-            <div className="w-50">
-              <img
-                src={props.LessonText.character2Image}
-                alt="Marco's face"
-                className=""
-              ></img>
-            </div>
-            <div className="p-1 my-auto w-50">
-              <p className="p-0 m-0">{character2}</p>
-              <p className="p-0 m-0">{props.LessonText.character2Age}</p>
-              <p className="p-0 m-0">
-                {props.LessonText.character2Nationality}
-              </p>
-              <p className="p-0 m-0">
-                {props.LessonText.character2Description}
-              </p>
-          </div>
         </div>
       </div>
       {output}

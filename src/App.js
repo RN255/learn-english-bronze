@@ -24,7 +24,9 @@ function App() {
           <Route
             key={item.name}
             path={`/series-Index-${item.urlName}`}
-            element={<SeriesIndex SeriesArray={item.array} SeriesName={item.name} />}
+            element={
+              <SeriesIndex SeriesArray={item.array} SeriesName={item.name} />
+            }
           />
         ))}
 
@@ -34,7 +36,11 @@ function App() {
               key={arrayItem.name}
               path={`/${arrayItem.series}-${arrayItem.number}`}
               element={
-                <BasicConvo LessonText={arrayItem} parentArray={item.array} SeriesName={item.name}/>
+                <BasicConvo
+                  LessonText={arrayItem}
+                  parentArray={item.array}
+                  SeriesName={item.name}
+                />
               }
             />
           ))
