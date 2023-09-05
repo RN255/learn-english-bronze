@@ -40,6 +40,7 @@ function App() {
                   LessonText={arrayItem}
                   parentArray={item.array}
                   SeriesName={item.name}
+                  urlName={item.urlName}
                 />
               }
             />

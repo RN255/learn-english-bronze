@@ -13,7 +13,7 @@ export default function SeriesIndex(props) {
               size="sm"
               className="lightBorder lessonSelectButtons my-3 p-3"
             >
-              Go back to lesson list
+              Go to Course list
             </Button>
           </Link>
         </div>
