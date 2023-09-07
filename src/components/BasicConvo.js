@@ -118,9 +118,7 @@ export default function BasicConvo(props) {
       </div>
       <div className="row justify-content-center">
         <div className="col-lg-6 px-4 text-center">
-          <p>
-            {props.LessonText.intro}
-          </p>
+          <p>{props.LessonText.intro}</p>
         </div>
       </div>
       {output}
