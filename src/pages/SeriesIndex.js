@@ -18,7 +18,14 @@ export default function SeriesIndex(props) {
           </Link>
         </div>
       </div>
-      <div className="row mt-3">
+
+      <div className="row">
+        <div className="col mt-3">
+          <h3>Title</h3>
+        </div>
+      </div>
+
+      <div className="row">
         <div className="col">
           <h2 className="seriesIndexSeriesName">{props.SeriesName}</h2>
         </div>

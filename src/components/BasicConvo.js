@@ -68,6 +68,12 @@ export default function BasicConvo(props) {
         </div>
       </div>
       {output}
+      <div className="row my-4"></div>
+      <NextPrev
+        parentArray={props.parentArray}
+        LessonText={props.LessonText}
+        urlName={props.urlName}
+      ></NextPrev>
     </div>
   );
 }
