@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/styles.css";
-import NextPrev from "./NextPrev";
 
 export default function BasicConvo(props) {
   var character1 = props.LessonText.character1;
@@ -50,16 +49,9 @@ export default function BasicConvo(props) {
 
   return (
     <div className="container mt-3 mb-5 basicConvo">
-      <NextPrev
-        parentArray={props.parentArray}
-        LessonText={props.LessonText}
-        urlName={props.urlName}
-      ></NextPrev>
       <div className="row mt-3 mb-4 text-center">
         <div className="col">
-          <h2>
-            {props.LessonText.number} | {props.LessonText.title}
-          </h2>
+          <h2>{props.LessonText.title}</h2>
         </div>
       </div>
       <div className="row justify-content-center">

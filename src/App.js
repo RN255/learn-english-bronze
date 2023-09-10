@@ -14,7 +14,7 @@ function App() {
     <BrowserRouter>
       <NavBar></NavBar>
       <Routes>
-        <Route path="/" element={<Home></Home>}></Route>
+        <Route path="/" element={<Home sampleLesson={seriesList[5].array}/>}></Route>
         <Route
           path="/lessonsIndex"
           element={<LessonsIndex seriesList={seriesList} />}
@@ -25,7 +25,7 @@ function App() {
             key={item.name}
             path={`/series-Index-${item.urlName}`}
             element={
-              <SeriesIndex SeriesArray={item.array} SeriesName={item.name} />
+              <SeriesIndex SeriesArray={item.array} SeriesName={item.name} SeriesDescription={item.description} />
             }
           />
         ))}

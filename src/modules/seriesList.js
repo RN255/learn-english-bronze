@@ -39,7 +39,7 @@ export const seriesList = [
       "This is unthinkably amazing and interesting Course SIX! So easy!",
   },
   {
-    name: "Basic English Course One",
+    name: "Marco goes to study in China!",
     urlName: "Basic-English-Course-One",
     array: basicEnglishOne,
     description: "A basic English course with many general phrases.",
