@@ -17,8 +17,32 @@ export default function LessonsIndex(props) {
                   <Card.Title className="text-center darkBlueText">
                     {item.name}
                   </Card.Title>
-                  <Card.Text className="text-center lightBlueText">
+                  <Card.Text className="lightBlueText">
                     {item.description}
+                    <div className="col d-flex darkBlueBackground my-1">
+                      <div>
+                        <img
+                          src={item.array[0].character1Image}
+                          alt="Marco's face"
+                          className="smallRoundPortrait"
+                        ></img>
+                      </div>
+                      <div className="p-1 my-auto ms-2">
+                        <p className="p-0 m-0">{item.array[0].character1}</p>
+                      </div>
+                    </div>
+                    <div className="col d-flex darkBlueBackground my-1">
+                      <div>
+                        <img
+                          src={item.array[0].character2Image}
+                          alt="Marco's face"
+                          className="smallRoundPortrait"
+                        ></img>
+                      </div>
+                      <div className="p-1 my-auto ms-2">
+                        <p className="p-0 m-0">{item.array[0].character2}</p>
+                      </div>
+                    </div>
                   </Card.Text>
                 </Card.Body>
               </Card>

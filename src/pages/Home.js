@@ -15,7 +15,7 @@ export default function Home(props) {
         <p>{props.sampleLesson[2].line1}</p>
 
         <div className="row pt-5 mt-5">
-          <p className="display-6 fw-bold border-bottom pb-3 lightBlueText">
+          <p className="border-bottom pb-3 lightBlueText size2rem">
             Example lesson:
           </p>
         </div>

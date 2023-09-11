@@ -19,7 +19,12 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={<Home sampleLesson={seriesList[5].array} sampleLessonInfo={seriesList[5]} />}
+          element={
+            <Home
+              sampleLesson={seriesList[5].array}
+              sampleLessonInfo={seriesList[5]}
+            />
+          }
         ></Route>
         <Route
           path="/lessonsIndex"
