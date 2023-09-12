@@ -18,7 +18,7 @@ export default function LessonsIndex(props) {
                     {item.name}
                   </Card.Title>
                   <Card.Text className="lightBlueText">
-                    {item.description}
+                    <div className="col mb-2">{item.description}</div>
                     <div className="col d-flex darkBlueBackground my-1">
                       <div>
                         <img

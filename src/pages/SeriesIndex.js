@@ -11,7 +11,7 @@ export default function SeriesIndex(props) {
             <Button
               variant="link"
               size="sm"
-              className="lightBorder lessonSelectButtons my-3 p-3"
+              className="lightBorder lessonSelectButtons my-3 px-3 py-2"
             >
               Go to Course list
             </Button>

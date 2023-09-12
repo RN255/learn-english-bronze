@@ -7,16 +7,19 @@ export default function Home(props) {
   return (
     <>
       <div className="container">
-        <p>Home</p>
-        <p>Can we add something to the home please, it's about time.</p>
-        <p>Be patient Robert!</p>
-        <p>Keep going.</p>
-        <p>{props.sampleLesson[1].line1}</p>
-        <p>{props.sampleLesson[2].line1}</p>
-
-        <div className="row pt-5 mt-5">
+        <div className="row text-center mt-5">
+          <div className="col">
+            <h1 className="lightBlueText">Learn English conversation with short stories</h1>
+          </div>
+        </div>
+        <div className="row text-center">
+          <div className="col">
+            <h2 className="size1point5rem">Learn English online for free with conversation dialogues</h2>
+          </div>
+        </div>
+        <div className="row mt-5">
           <p className="border-bottom pb-3 lightBlueText size2rem">
-            Example lesson:
+            Example lesson
           </p>
         </div>
       </div>

@@ -44,9 +44,9 @@ export default function NavBar() {
                   Lessons
                 </Nav.Link>
                 <Nav.Link
-                // href="/info"
-                // to="/info"
-                // className="navLink"
+                href="/info"
+                to="/info"
+                className="navLink"
                 >
                   Info
                 </Nav.Link>

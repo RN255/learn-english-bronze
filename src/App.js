@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import NavBar from "./components/NavBar";
 import LessonsIndex from "./pages/LessonsIndex";
+import Info from "./pages/Info";
 import BasicConvo from "./components/BasicConvo";
 import SeriesIndex from "./pages/SeriesIndex";
 import Footer from "./components/Footer";
@@ -30,6 +31,8 @@ function App() {
           path="/lessonsIndex"
           element={<LessonsIndex seriesList={seriesList} />}
         ></Route>
+
+        <Route path="/info" element={<Info />} />
 
         {seriesList.map((item) => (
           <Route
