@@ -19,7 +19,7 @@ export default function Home(props) {
         </div>
         <div className="row mt-5">
           <p className="border-bottom pb-3 lightBlueText size2rem">
-            Example lesson
+            Example story
           </p>
         </div>
       </div>
