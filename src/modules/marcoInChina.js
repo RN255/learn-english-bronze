@@ -9,8 +9,15 @@ export const marcoInChina = [
     character2: "Sally",
     character2Age: "25",
     character2Nationality: "Japan",
-    character2Description: "She is also a nice girl and wants to have fun",
+    character2Description:
+      "She is also a nice girl and wants to have fun all the time.",
     character2Image: require("../assets/images/sallyImg.jpg"),
+    character3: "Martina",
+    character3Age: "35",
+    character3Nationality: "China",
+    character3Description:
+      "Don't confuse her with Sally - She's ten years older",
+    character3Image: require("../assets/images/martina.jpg"),
   },
 
   {
@@ -55,7 +62,9 @@ export const marcoInChina = [
     character1Image: require("../assets/images/9d5dda7604f544dca249fedf270f5bc8.jpg"),
     character2: "Sally",
     character2Image: require("../assets/images/sallyImg.jpg"),
-    numberOfLines: "10",
+    character3: "martina",
+    character3Image: require("../assets/images/martina.jpg"),
+    numberOfLines: "13",
     intro: "Marco is sitting on his bed feeling a little bit bored...",
     line1Speaker: "Marco",
     line1: "Sally, isn't there something more to life. I feel bored.",
@@ -79,5 +88,51 @@ export const marcoInChina = [
     line9: "I know, but if I get a job and save up then maybe I can go",
     line10Speaker: "Sally",
     line10: "That sounds like a good idea. You can go during the holiday.",
+    line11Speaker: "martina",
+    line11: "Sorry to ruin your conversation. Can I join in?",
+    line12Speaker: "Marco",
+    line12: "Sure, why not?",
+    line13Speaker: "Sally",
+    line13: "Who is she?",
+  },
+
+  {
+    number: "3",
+    title: "A plan of action",
+    series: "MarcoGoesToChina",
+    character1: "Marco",
+    character1Image: require("../assets/images/9d5dda7604f544dca249fedf270f5bc8.jpg"),
+    character2: "Sally",
+    character2Image: require("../assets/images/sallyImg.jpg"),
+    numberOfLines: "10",
+    intro:
+      "Marco wants to come up with a detailed plan for writing new chapters for his stories",
+    line1Speaker: "Marco",
+    line1:
+      "Do you think this is a good idea? I've got a template on WPS office and then I can just write in one new chapter at a time.",
+    line2Speaker: "Sally",
+    line2:
+      "I'm not really an expert on these things so it might not be a good idea to ask me.",
+    line3Speaker: "Marco",
+    line3:
+      "Tell me your opinion. I really want to know what my friends think of this. You should help your friends if you can.",
+    line4Speaker: "text",
+    line4: "Sally looks a little shy. She doesn't want to give bad advice.",
+    line5Speaker: "Marco",
+    line5: "Sally, did you hear me?",
+    line6Speaker: "Sally",
+    line6:
+      "Okay, it looks good to me. I'm not an expert but it does look good.",
+    line7Speaker: "Marco",
+    line7: "Thanks, that wasn't too hard was it?",
+    line8Speaker: "Sally",
+    line8:
+      "No, I just worry that I'll give bad advice. I'd feel really guilty if I told someone to do something and it was a bad idea. Maybe I lack confidence in my own judgement.",
+    line9Speaker: "Marco",
+    line9:
+      "Oh really? It sounds like something might have happened in your life. What made you feel this way?",
+    line10Speaker: "Sally",
+    line10:
+      "I made some mistakes, that's all. When I was young I was full of confidence, but now... I'm not so sure about myself...",
   },
 ];

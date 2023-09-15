@@ -34,7 +34,7 @@ export default function BasicConvo(props) {
                     : ""
                 }
                 alt="A face"
-                className="p-0 m-1"
+                className="basicConvoImg p-0 m-1"
               ></img>
             )}
           </div>
@@ -60,7 +60,7 @@ export default function BasicConvo(props) {
               <img
                 src={props.sampleLessonCharacterInfo.character1Image}
                 alt="Marco's face"
-                className=""
+                className="sampleConvoCharacterCarImg"
               ></img>
             </div>
             <div className="col-8 p-1 col-lg-9 col-xl-10">
@@ -85,7 +85,7 @@ export default function BasicConvo(props) {
               <img
                 src={props.sampleLessonCharacterInfo.character2Image}
                 alt="Marco's face"
-                className=""
+                className="sampleConvoCharacterCarImg"
               ></img>
             </div>
             <div className="col-8 p-1 col-lg-9 col-xl-10">

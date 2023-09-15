@@ -47,21 +47,21 @@ export default function SeriesIndex(props) {
 
       <div className="row justify-content-start px-1">
         <div className="col-md-6 p-1 my-1 characterCard">
-          <div className="col d-flex darkBlueBackground">
-            <div className="col-4 col-lg-3 col-xl-2">
+          <div className="col d-flex darkBlueBackground h-100">
+            <div className="col-4 col-lg-3">
               <img
                 src={props.SeriesArray[0].character1Image}
                 alt="Marco's face"
                 className=""
               ></img>
             </div>
-            <div className="col-8 p-1 col-lg-9 col-xl-10">
+            <div className="col-8 py-1 ps-2 pe-1 col-lg-9">
               <p className="p-0 m-0">{props.SeriesArray[0].character1}</p>
               <p className="p-0 m-0">{props.SeriesArray[0].character1Age}</p>
               <p className="p-0 m-0">
                 {props.SeriesArray[0].character1Nationality}
               </p>
-              <p className="p-0 m-0">
+              <p className="p-0 m-0 setCharacterDescHeight">
                 {props.SeriesArray[0].character1Description}
               </p>
             </div>
@@ -69,22 +69,22 @@ export default function SeriesIndex(props) {
         </div>
         {props.SeriesArray[0].character2 && (
           <div className="col-md-6 p-1 my-1 characterCard">
-            <div className="col d-flex darkBlueBackground">
-              <div className="col-4 col-lg-3 col-xl-2">
+            <div className="col d-flex darkBlueBackground h-100">
+              <div className="col-4 col-lg-3">
                 <img
                   src={props.SeriesArray[0].character2Image}
                   alt="Marco's face"
                   className=""
                 ></img>
               </div>
-              <div className="col-8 p-1 col-lg-9 col-xl-10">
-                <p className="p-0 m-0">{props.SeriesArray[0].character1}</p>
-                <p className="p-0 m-0">{props.SeriesArray[0].character1Age}</p>
+              <div className="col-8 py-1 ps-2 pe-1 col-lg-9">
+                <p className="p-0 m-0">{props.SeriesArray[0].character2}</p>
+                <p className="p-0 m-0">{props.SeriesArray[0].character2Age}</p>
                 <p className="p-0 m-0">
-                  {props.SeriesArray[0].character1Nationality}
+                  {props.SeriesArray[0].character2Nationality}
                 </p>
-                <p className="p-0 m-0">
-                  {props.SeriesArray[0].character1Description}
+                <p className="p-0 m-0 setCharacterDescHeight">
+                  {props.SeriesArray[0].character2Description}
                 </p>
               </div>
             </div>
@@ -92,22 +92,22 @@ export default function SeriesIndex(props) {
         )}
         {props.SeriesArray[0].character3 && (
           <div className="col-md-6 p-1 my-1 characterCard">
-            <div className="col d-flex darkBlueBackground">
-              <div className="col-4 col-lg-3 col-xl-2">
+            <div className="col d-flex darkBlueBackground h-100">
+              <div className="col-4 col-lg-3">
                 <img
-                  src={props.SeriesArray[0].character2Image}
+                  src={props.SeriesArray[0].character3Image}
                   alt="Marco's face"
                   className=""
                 ></img>
               </div>
-              <div className="col-8 p-1 col-lg-9 col-xl-10">
-                <p className="p-0 m-0">{props.SeriesArray[0].character1}</p>
-                <p className="p-0 m-0">{props.SeriesArray[0].character1Age}</p>
+              <div className="col-8 py-1 ps-2 pe-1 col-lg-9">
+                <p className="p-0 m-0">{props.SeriesArray[0].character3}</p>
+                <p className="p-0 m-0">{props.SeriesArray[0].character3Age}</p>
                 <p className="p-0 m-0">
-                  {props.SeriesArray[0].character1Nationality}
+                  {props.SeriesArray[0].character3Nationality}
                 </p>
-                <p className="p-0 m-0">
-                  {props.SeriesArray[0].character1Description}
+                <p className="p-0 m-0 setCharacterDescHeight">
+                  {props.SeriesArray[0].character3Description}
                 </p>
               </div>
             </div>
@@ -115,22 +115,22 @@ export default function SeriesIndex(props) {
         )}
         {props.SeriesArray[0].character4 && (
           <div className="col-md-6 p-1 my-1 characterCard">
-            <div className="col d-flex darkBlueBackground">
-              <div className="col-4 col-lg-3 col-xl-2">
+            <div className="col d-flex darkBlueBackground h-100">
+              <div className="col-4 col-lg-3">
                 <img
-                  src={props.SeriesArray[0].character2Image}
+                  src={props.SeriesArray[0].character4Image}
                   alt="Marco's face"
                   className=""
                 ></img>
               </div>
-              <div className="col-8 p-1 col-lg-9 col-xl-10">
-                <p className="p-0 m-0">{props.SeriesArray[0].character1}</p>
-                <p className="p-0 m-0">{props.SeriesArray[0].character1Age}</p>
+              <div className="col-8 py-1 ps-2 pe-1 col-lg-9">
+                <p className="p-0 m-0">{props.SeriesArray[0].character4}</p>
+                <p className="p-0 m-0">{props.SeriesArray[0].character4Age}</p>
                 <p className="p-0 m-0">
-                  {props.SeriesArray[0].character1Nationality}
+                  {props.SeriesArray[0].character4Nationality}
                 </p>
-                <p className="p-0 m-0">
-                  {props.SeriesArray[0].character1Description}
+                <p className="p-0 m-0 setCharacterDescHeight">
+                  {props.SeriesArray[0].character4Description}
                 </p>
               </div>
             </div>

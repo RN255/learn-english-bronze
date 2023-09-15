@@ -56,8 +56,6 @@
   font-size: 2rem;
 }
 
-
-
 /* home page animations  */
 
 .homePageBorderElement {
@@ -82,12 +80,14 @@
   }
 }
 
-.basicConvo .characterCard img {
+.sampleConvoCharacterCarImg {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 0%;
 }
+
+
 
 /* lesson select buttons  */
 
@@ -196,6 +196,11 @@
 
 .seriesIndex .characterCard {
   font-size: 1rem;
+  /* min-height: 10rem; */
+}
+
+.setCharacterDescHeight {
+  height: 5rem;
 }
 
 /* BasicConvo  */
@@ -212,7 +217,7 @@
   background-color: #2af45c20 !important;
 }
 
-.basicConvo img {
+.basicConvoImg {
   height: 3rem;
   width: 3rem;
   /* height: 50px; */

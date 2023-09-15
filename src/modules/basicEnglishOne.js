@@ -9,8 +9,7 @@ export const basicEnglishOne = [
     character2: "Sally",
     character2Age: "22",
     character2Nationality: "USA",
-    character2Description:
-      "It will look silly if text is very long. We'll have to set limit? Portrait must be bigger than text...",
+    character2Description: "A nice girl who",
     character2Image: require("../assets/images/sallyImg.jpg"),
   },
   {
