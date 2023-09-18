@@ -90,16 +90,16 @@ export default function BasicConvo(props) {
             </div>
             <div className="col-8 p-1 col-lg-9 col-xl-10">
               <p className="p-0 m-0">
-                {props.sampleLessonCharacterInfo.character1}
+                {props.sampleLessonCharacterInfo.character2}
               </p>
               <p className="p-0 m-0">
-                {props.sampleLessonCharacterInfo.character1Age}
+                {props.sampleLessonCharacterInfo.character2Age}
               </p>
               <p className="p-0 m-0">
-                {props.sampleLessonCharacterInfo.character1Nationality}
+                {props.sampleLessonCharacterInfo.character2Nationality}
               </p>
               <p className="p-0 m-0">
-                {props.sampleLessonCharacterInfo.character1Description}
+                {props.sampleLessonCharacterInfo.character2Description}
               </p>
             </div>
           </div>

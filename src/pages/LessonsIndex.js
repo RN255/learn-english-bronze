@@ -18,7 +18,8 @@ export default function LessonsIndex(props) {
                     {item.name}
                   </Card.Title>
                   <Card.Text className="lightBlueText">
-                    <div className="col mb-2">{item.description}</div>
+                    <div className="col mb-2">Level: {item.array[0].level}</div>
+                    <div className="col mb-3">{item.description}</div>
                     <div className="col d-flex darkBlueBackground my-1">
                       <div>
                         <img

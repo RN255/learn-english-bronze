@@ -31,8 +31,11 @@ export default function SeriesIndex(props) {
         </div>
       </div>
 
-      <div className="row mt-1">
+      <div className="row">
         <div className="col">
+          <p className="seriesIndexSeriesDescription my-1">
+            Level: {props.SeriesArray[0].level}
+          </p>
           <p className="seriesIndexSeriesDescription">
             {props.SeriesDescription}
           </p>
@@ -41,7 +44,7 @@ export default function SeriesIndex(props) {
 
       <div className="row">
         <div className="col mt-3 mb-1">
-          <h3>Characters</h3>
+          <h3>Main Characters</h3>
         </div>
       </div>
 

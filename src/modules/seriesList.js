@@ -5,6 +5,7 @@ import { course5Array } from "./course5";
 import { course6Array } from "./course6";
 import { basicEnglishOne } from "./basicEnglishOne";
 import { marcoInChina } from "./marcoInChina";
+import { marcoStudiesAbroad } from "./marcoStudiesAbroad";
 
 export const seriesList = [
   {
@@ -51,4 +52,12 @@ export const seriesList = [
     array: marcoInChina,
     description: "A story about Marco in China.",
   },
+  {
+    name: "Marco Studies Abroad",
+    urlName: "marco-Studies-Abroad",
+    array: marcoStudiesAbroad,
+    description:
+      "Learn simple english phrases with Marco as he studies in a foreign country.",
+  },
+    
 ];

@@ -214,12 +214,12 @@
 }
 
 .greenBackground {
-  background-color: #2af45c20 !important;
+  background-color: #00D5E330 !important;
 }
 
 .basicConvoImg {
-  height: 3rem;
-  width: 3rem;
+  height: 4rem;
+  width: 4rem;
   /* height: 50px; */
   /* width: 75px; */
   border-radius: 50%;
