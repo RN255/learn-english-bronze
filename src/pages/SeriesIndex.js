@@ -157,7 +157,7 @@ export default function SeriesIndex(props) {
             >
               <div className="row border-bottom py-2 LessonItem">
                 <div className="col-1">{item.number}</div>
-                <div className="col col-lg-4 col-xl-3">{item.title}</div>
+                <div className="col">{item.title}</div>
               </div>
             </Link>
           ) : null

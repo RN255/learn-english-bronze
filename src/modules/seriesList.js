@@ -6,6 +6,7 @@ import { course6Array } from "./course6";
 import { basicEnglishOne } from "./basicEnglishOne";
 import { marcoInChina } from "./marcoInChina";
 import { marcoStudiesAbroad } from "./marcoStudiesAbroad";
+import { kindleBook } from "./kindleBook";
 
 export const seriesList = [
   {
@@ -59,5 +60,10 @@ export const seriesList = [
     description:
       "Learn simple english phrases with Marco as he studies in a foreign country.",
   },
-    
+  {
+    name: "kindle Book",
+    urlName: "kindle-Book",
+    array: kindleBook,
+    description: "Learn simple english phrases.",
+  },
 ];
