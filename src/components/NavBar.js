@@ -10,7 +10,7 @@ export default function NavBar() {
         <Container fluid>
           <Navbar.Brand>
             <Nav.Link href="/" to="/" className="navLogo d-flex">
-              <p className="my-auto">LearnEnglish</p>
+              <p className="my-auto">FreeDomains?</p>
             </Nav.Link>
           </Navbar.Brand>
           <Navbar.Toggle
@@ -29,25 +29,17 @@ export default function NavBar() {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link
-                href="/"
-                to="/"
-                className="navLink"
-                >
+                <Nav.Link href="/" to="/" className="navLink">
                   Home
                 </Nav.Link>
                 <Nav.Link
-                href="/lessonsIndex"
-                to="/lessonsIndex"
-                className="navLink"
+                  href="/lessonsIndex"
+                  to="/lessonsIndex"
+                  className="navLink"
                 >
                   Lessons
                 </Nav.Link>
-                <Nav.Link
-                href="/info"
-                to="/info"
-                className="navLink"
-                >
+                <Nav.Link href="/info" to="/info" className="navLink">
                   Info
                 </Nav.Link>
               </Nav>

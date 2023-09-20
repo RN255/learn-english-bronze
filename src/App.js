@@ -22,8 +22,8 @@ function App() {
           path="/"
           element={
             <Home
-              sampleLesson={seriesList[5].array}
-              sampleLessonInfo={seriesList[5]}
+              sampleLesson={seriesList[0].array}
+              sampleLessonInfo={seriesList[0]}
             />
           }
         ></Route>

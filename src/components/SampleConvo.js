@@ -7,7 +7,7 @@ export default function BasicConvo(props) {
   var character3 = props.LessonText.character3;
 
   const output = [];
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 8; i++) {
     output.push(
       <div key={i} className={"row my-1 justify-content-center"}>
         <div
