@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
+import Alert from "react-bootstrap/Alert";
 
 export default function SeriesIndex(props) {
   return (
@@ -32,13 +33,17 @@ export default function SeriesIndex(props) {
       </div>
 
       <div className="row">
-        <div className="col">
-          <p className="seriesIndexSeriesDescription my-1">
+        <div className="col-sm-9 col-md-6 col-lg-4 col-xxl-3 mt-2">
+          <Alert variant="success" className="text-center">
             Level: {props.SeriesArray[0].level}
-          </p>
-          <p className="seriesIndexSeriesDescription">
-            {props.SeriesDescription}
-          </p>
+          </Alert>
+        </div>
+        <div className="row">
+          <div className="col">
+            <p className="seriesIndexSeriesDescription">
+              {props.SeriesDescription}
+            </p>
+          </div>
         </div>
       </div>
 

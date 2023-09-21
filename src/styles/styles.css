@@ -14,7 +14,7 @@
 
 .navBar p:first-of-type {
   color: #2a9df4;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 .navBar p:nth-of-type(2) {
@@ -245,6 +245,6 @@
 
 @media screen and (max-width: 400px) {
   .navBar p:first-of-type {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }

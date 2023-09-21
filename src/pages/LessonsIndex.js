@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
+import Alert from "react-bootstrap/Alert";
 
 export default function LessonsIndex(props) {
   return (
@@ -18,8 +19,13 @@ export default function LessonsIndex(props) {
                     {item.name}
                   </Card.Title>
                   <Card.Text className="lightBlueText">
-                    <div className="col mb-2">Level: {item.array[0].level}</div>
                     <div className="col mb-3">{item.description}</div>
+                    <div className="col mb-4">
+                      <Alert variant="success" className="text-center">
+                        Level: {item.array[0].level}
+                      </Alert>
+                    </div>
+
                     <div className="col d-flex darkBlueBackground my-1">
                       <div>
                         <img
