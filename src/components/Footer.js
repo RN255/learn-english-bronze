@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container">
         <footer className="d-md-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
           <p className="col-md-4 mb-0 text-center text-md-start">
-            © 2023 LearnEnglish
+            © 2023 Super Adept
           </p>
 
           <ul className="nav col-md-4 justify-content-center justify-content-md-end">
