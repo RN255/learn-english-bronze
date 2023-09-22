@@ -38,7 +38,7 @@ export default function BasicConvo(props) {
               ></img>
             )}
           </div>
-          <div className="my-auto ms-2 p-0">
+          <div className="my-auto p-2">
             <p className="my-auto p-0">{props.LessonText[`line${i + 1}`]}</p>
           </div>
         </div>
