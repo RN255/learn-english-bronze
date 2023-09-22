@@ -6,6 +6,6 @@ export const seriesList = [
     urlName: "Marco-Studies-Abroad",
     array: marcoStudiesAbroad,
     description:
-      "Learn simple english phrases with Marco as he studies in a foreign country.",
+      "Learn simple English phrases with Marco as he studies in a foreign country.",
   },
 ];

@@ -59,9 +59,9 @@ export const marcoStudiesAbroad = [
     line6Speaker: "Kate",
     line6: "How old are you?",
     line7Speaker: "Marco",
-    line7: "I'm twenty one years old. How old are you?",
+    line7: "I'm twenty-one years old. How old are you?",
     line8Speaker: "Kate",
-    line8: "I'm twenty two.",
+    line8: "I'm twenty-two.",
   },
 
   {
@@ -231,7 +231,7 @@ export const marcoStudiesAbroad = [
     line5Speaker: "Marco",
     line5: "What would you like to drink?",
     line6Speaker: "Kate",
-    line6: "I want to an americano.",
+    line6: "I want an americano.",
     line7Speaker: "Marco",
     line7: "Small, medium or large?",
     line8Speaker: "Kate",
